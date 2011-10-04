@@ -47,10 +47,10 @@ Create a working directory.
 
 $ mkdir zendframework
 
-
 Uncompress here and cd into the ZendFramework-1.x.x-minimal directory.
 
 $ cd zendframework
+
 $ unzip|tar xzvf <path to ZendFramework Tarball>
 
 Use the zf.sh script in the bin directory to generate default project
@@ -60,6 +60,7 @@ $ [ZendFramework-root]/bin/zf.sh create project zendframework_default
 Go back to top level zendframework directory and create our application on OpenShift.
 
 $ cd ../
+
 $ rhc-create-app -l $username -a zendphp -t php-5.3.2
 
 Move the default files into the git repository and push them. The directory
@@ -67,14 +68,20 @@ Move the default files into the git repository and push them. The directory
 the public folder that ZendFramework created in here.
 
 $ cd zendphp
+
 $ cp [path-to]/zendframework/zendframework_default/public/* php/
+
 $ cp -R [path-to]/zendframework/zendframework_default/application .
+
 $ cp -R [path-to]/zendframework/zendframework_default/library .
+
 $ cp -R [path-to]/zendframework/ZendFramework-1.11.6-minimal/library/Zend library/
 
 Add all these files to git repo and push.
 
 $ git add .
+
 $ git commit -m 'Initial import of ZendFramework'
+
 $ git push origin
 
