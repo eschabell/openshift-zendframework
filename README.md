@@ -61,7 +61,7 @@ Go back to top level zendframework directory and create our application on OpenS
 
 $ cd ../
 
-$ rhc-create-app -l $username -a zendphp -t php-5.3.2
+$ rhc-create-app -l $username -a zendphp -t php-5.3
 
 Move the default files into the git repository and push them. The directory
 'php' is the document root for PHP applications, so we copy the contents of
