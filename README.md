@@ -20,7 +20,7 @@ Create a php-5.3 application
 Add this upstream zendphp repo
 
     cd zendphp
-    git remote add upstream -m master git@github.com:eschabell/openshift-zendframework.git
+    git remote add upstream -m master git://github.com/eschabell/openshift-zendframework.git
     git pull -s recursive -X theirs upstream master
     # note that the git pull above can be used later to pull updates to zendphp
     
@@ -61,7 +61,7 @@ Go back to top level zendframework directory and create our application on OpenS
 
 $ cd ../
 
-$ rhc-create-app -l $username -a zendphp -t php-5.3
+$ rhc-create-app -l $username -a zendphp -t php-5.3.2
 
 Move the default files into the git repository and push them. The directory
 'php' is the document root for PHP applications, so we copy the contents of
