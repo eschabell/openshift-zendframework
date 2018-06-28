@@ -1,3 +1,6 @@
+Update: June 2018 moved to [Gitlab](https://gitlab.com/eschabell/openshift-zendframework)
+
+
 ZendFramework on OpenShift Express
 ==================================
 Installing the ZendFramework on OpenShift was never easier!
